@@ -1,0 +1,9 @@
+machine:
+  java:
+    version: openjdk7
+test:
+  override:
+    - mvn clean install
+    - java -jar target/benchmarks.jar -foe true -gc true -rff results.csv
+  post:
+    - cp -r results.csv $CIRCLE_ARTIFACTS/
