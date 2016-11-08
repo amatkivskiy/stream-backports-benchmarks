@@ -1,4 +1,4 @@
-package com.amatkivskiy.streams.test;
+package com.amatkivskiy.stream.benchmark;
 
 import com.annimon.stream.Stream;
 import com.annimon.stream.function.Predicate;
@@ -27,16 +27,16 @@ import rx.functions.Func1;
 
 @State(Scope.Thread)
 @BenchmarkMode(Mode.Throughput)
-@OutputTimeUnit(TimeUnit.MILLISECONDS)
+@OutputTimeUnit(TimeUnit.MICROSECONDS)
 @Warmup(iterations = 10, time = 1, timeUnit = TimeUnit.MILLISECONDS)
 @Measurement(iterations = 10, time = 1, timeUnit = TimeUnit.MILLISECONDS)
 @Fork(5)
-public class SimpleStreamsBenchmark_10000_1000000 {
+public class SimpleStreamsBenchmark_1_1000 {
 
   public List<SamplePoJo> inputItems;
   public boolean result = false;
 
-  @Param({ "10000", "100000", "1000000"})
+  @Param({"1", "10", "100", "1000"})
   public int itemsCount;
 
   @Setup(Level.Iteration)

@@ -1,4 +1,4 @@
-package com.amatkivskiy.streams.test;
+package com.amatkivskiy.stream.benchmark;
 
 public class SamplePoJo {
     public final String stringValue;

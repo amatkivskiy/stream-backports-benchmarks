@@ -1,4 +1,4 @@
-package com.amatkivskiy.streams.test;
+package com.amatkivskiy.stream.benchmark;
 
 import com.annimon.stream.Stream;
 import com.annimon.stream.function.Predicate;
