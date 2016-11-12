@@ -2,7 +2,10 @@
 
 Here you can find sources for bechmarks on Java 8 Streams backports. Also you can find the results of latest run [here](https://circleci.com/gh/amatkivskiy/streams-backport-benchmarks). 
 
-#Latest results
+#Latest results in csv format
+https://5-73061278-gh.circle-artifacts.com/0/tmp/circle-artifacts.ziSNif2/results.csv
+
+#Latest text results
 
 ```
 # Run complete. Total time: 01:55:03
